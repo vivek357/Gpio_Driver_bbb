@@ -29,4 +29,3 @@ routine, in contrast, is the last one called by the kernel when being unloaded f
 • Create device nodes to expose GPIO resources to userspace 
 • Get current timestamp used for contact debouncing. 
 
-
