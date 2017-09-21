@@ -1,4 +1,4 @@
-****Design of the GPIO Device Driver****
+# Design of the GPIO Device Driver
 
 _Since the per-device structure (driver-specific data structure) is the information reposi-tory which the GPIO character device driver instantiates and revolves, it was designed first._
 
@@ -49,4 +49,13 @@ routine, in contrast, is the last one called by the kernel when being unloaded f
  • Create device nodes to expose GPIO resources to userspace 
  
  • Get current timestamp used for contact debouncing. 
+
+:+1: ----------------------------------------------------------------------------------------------------------------------------------
+
+# OutPut Functionality :
+
+The first test case was carried out to verify the output functionality offered by the GPIO device driver. An application program called output_test was run in the userspace to test the driver, and it has the following syntax: 
+./output_test <logic_level>  
+
+where <logic_level> refers to the logic state that is passed as an argument to the pro-gram for setting a GPIO pin low or high. If <logic_level> is “1”, the application will set the logic level of all GPIO pins high, whereas passing “0” as an argument to the application program will set all the logic level of all GPIO pins low.
 
