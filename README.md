@@ -1,7 +1,8 @@
-Design of the GPIO Device Driver
-Since the per-device structure (driver-specific data structure) is the information reposi-tory which the GPIO character device driver instantiates and revolves, it was designed first.
+****Design of the GPIO Device Driver****
 
-The structure consists of the following data elements: 
+_Since the per-device structure (driver-specific data structure) is the information reposi-tory which the GPIO character device driver instantiates and revolves, it was designed first._
+
+**The structure consists of the following data elements:** 
 
 
 • A cdev kernel abstraction element for character device drivers
@@ -20,17 +21,17 @@ The structure consists of the following data elements:
 
 • A spinlock used for synchronization. 
 
-The per-device data structure plays the role of representing a GPIO pin on BBB.
+**The per-device data structure plays the role of representing a GPIO pin on BBB.**
 
 
-After the per-device structure had been created, the design of driver initialization routine and driver exit routine took place.
+_After the per-device structure had been created, the design of driver initialization routine and driver exit routine took place.
 The driver initialization routine is the one which is called first when the kernel installs the GPIO device driver. The driver exit 
-routine, in contrast, is the last one called by the kernel when being unloaded from the system.
+routine, in contrast, is the last one called by the kernel when being unloaded from the system._
  
- In this thesis report, device driver and kernel module will be used interchangeably. Be-cause the driver
- initialization routine is the bedrock for registering the GPIO character device driver to the kernel,
+ _In this thesis report, device driver and kernel module will be used interchangeably. Be-cause the driver
+ initialization routine is the bedrock for registering the GPIO character device driver to the kernel,_
  
- it will be responsible for doing the following steps:
+ **it will be responsible for doing the following steps:**
  
  
  • Register a range of character device numbers 
