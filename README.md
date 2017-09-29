@@ -66,9 +66,25 @@ https://user-images.githubusercontent.com/12700203/30694431-9a063592-9ef1-11e7-8
 
 https://user-images.githubusercontent.com/12700203/30694396-6cd828a0-9ef1-11e7-8f18-ff2ba8f5bb35.png
 
+<p align="center">
+  <img src="https://github.com/vivek357/Gpio_Driver_bbb/blob/master/images/image1.png" />
+ </p>
+ 
+ 
+ <p align="center">
+  <img src="https://github.com/vivek357/Gpio_Driver_bbb/blob/master/images/image2.png" />
+  </p>
+  
+  <p align="center">
+  <img src="https://github.com/vivek357/Gpio_Driver_bbb/blob/master/images/image3.png" />
+  </p>
 
 
 ##### _Output functionality testing result with all GPIO pins set high_
 
 
 https://user-images.githubusercontent.com/12700203/30694628-7072e83c-9ef2-11e7-9f09-8719c27b0d17.png
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12700203/30694628-7072e83c-9ef2-11e7-9f09-8719c27b0d17.png" />
+  </p>
